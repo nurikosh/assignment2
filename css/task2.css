@@ -1,0 +1,105 @@
+.library {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--gap) * 2);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.nav-links {
+  flex: 1 1 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  padding: 0;
+  list-style: none;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.cards,
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.card,
+.plan {
+  flex: 1 1 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card p,
+.plan ul {
+  flex-grow: 1;
+}
+
+.card .btn {
+  align-self: flex-start;
+}
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.pager::before,
+.pager-count {
+  content: "";
+  flex: 1;
+}
+
+.pager-count {
+  text-align: right;
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.pager-pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap);
+}
+
+.avatar {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--blue);
+}
+
+.comment-text {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.plan {
+  margin-block: var(--gap);
+}
+
+.plan.featured {
+  margin-block: 0;
+  border-color: var(--blue);
+}

@@ -1,0 +1,31 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.composition {
+  --size: min(90vw, 90vh);
+  width: var(--size);
+  aspect-ratio: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: calc(var(--size) / 60);
+  padding: calc(var(--size) / 60);
+  background: #1c1c1c;
+  grid-template-areas:
+    "blue blue top    top    top   top"
+    "blue blue yellow yellow tall  tall"
+    "blue blue yellow yellow tall  tall"
+    "red  red  red    .      tall  tall"
+    "red  red  red    .      small small"
+    "red  red  red    .      small small";
+}
+
+.blue   { grid-area: blue;   background: var(--blue); }
+.yellow { grid-area: yellow; background: var(--yellow); }
+.red    { grid-area: red;    background: var(--red); }
+.top    { grid-area: top;    background: #f1f1f1; }
+.tall   { grid-area: tall;   background: #f1f1f1; }
+.small  { grid-area: small;  background: #f1f1f1; }

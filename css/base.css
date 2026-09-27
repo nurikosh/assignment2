@@ -1,0 +1,46 @@
+:root {
+  --blue: #2f5bd3;
+  --yellow: #ecbf00;
+  --red: #c22626;
+  --text: #222;
+  --muted: #666;
+  --bg: #f5f5f5;
+  --white: #fff;
+  --border: #ddd;
+  --gap: 1rem;
+  --radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: var(--gap);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+.box {
+  padding: var(--gap);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  background: var(--blue);
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
